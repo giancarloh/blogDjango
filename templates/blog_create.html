@@ -1,0 +1,9 @@
+<h3>Formulario Crear Post</h3>
+<form method="POST">
+    {% csrf_token %}
+    Titulo {{form.title}}
+    <br>
+    Contenido {{form.content}}
+    <br>
+    <button type="submit">Guardar</button>
+</form>
